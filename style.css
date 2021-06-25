@@ -1,0 +1,145 @@
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+}
+
+div {
+    width: 40vw;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding: 50px;
+    border-radius: 8px 8px 8px 8px;
+    background-color: #1b1b32;
+    opacity: 0.9;
+}
+
+#title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: -10px;
+    margin-top: 70px;
+}
+
+#description {
+    text-align: center;
+    font-style: italic;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
+    display: block;
+    font-size: 18px;
+}
+
+label, p {
+    font-size: 18px;
+    text-align: left;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+#name-lable, #email-lable, #number-lable {
+    margin-bottom: 30px;
+}
+
+input[type=text], input[type=email], input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-bottom: 30px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #495057;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+input[type=radio], input[type=checkbox] {
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+
+textarea {
+    min-height: 60px;
+    height: 70px;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    resize: vertical;
+    color: #495057;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    flex-direction: column;
+    resize: auto;
+    cursor: text;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    column-count: initial !important;
+    margin: 0em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+#submit {
+    display: block;
+    width: 104%;
+    padding: 10px;
+    background: #37af65;
+    border-radius: 2px;
+    /* cursor: pointer; */
+    color: white;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    div {
+        width: 95vw;
+        height: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 0;
+        padding: 30px;
+        border-radius: 8px 8px 8px 8px;
+        background-color: #1b1b32;
+        opacity: 0.9;
+    }
+}
